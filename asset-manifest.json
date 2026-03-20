@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Turf-ticket-booking/static/css/main.5adc53e3.css",
+    "main.js": "/Turf-ticket-booking/static/js/main.ac527570.js",
+    "static/js/453.43a5fe21.chunk.js": "/Turf-ticket-booking/static/js/453.43a5fe21.chunk.js",
+    "static/media/logo.png": "/Turf-ticket-booking/static/media/logo.f8f2e0fb9222aa050219.png",
+    "static/media/turf-2.jpg": "/Turf-ticket-booking/static/media/turf-2.fa65c67f2dc1608394ae.jpg",
+    "static/media/turf-9.jpg": "/Turf-ticket-booking/static/media/turf-9.2ac8b959bec2aea42559.jpg",
+    "static/media/turf-3.jpg": "/Turf-ticket-booking/static/media/turf-3.af79600a25747eea5ef9.jpg",
+    "static/media/turf-5.jpg": "/Turf-ticket-booking/static/media/turf-5.74278053808b1efc2eaa.jpg",
+    "static/media/turf-4.jpg": "/Turf-ticket-booking/static/media/turf-4.06d18ab8dc5adac225e4.jpg",
+    "static/media/turf-7.jpg": "/Turf-ticket-booking/static/media/turf-7.6816708072012798d42e.jpg",
+    "static/media/turf-6.jpg": "/Turf-ticket-booking/static/media/turf-6.b474289ef2b3c2adbe33.jpg",
+    "static/media/turf-1.jpg": "/Turf-ticket-booking/static/media/turf-1.6afc9e8a769cb0cdadf9.jpg",
+    "static/media/turf-8.jpg": "/Turf-ticket-booking/static/media/turf-8.b90db89f6d061ecdde08.jpg",
+    "index.html": "/Turf-ticket-booking/index.html",
+    "main.5adc53e3.css.map": "/Turf-ticket-booking/static/css/main.5adc53e3.css.map",
+    "main.ac527570.js.map": "/Turf-ticket-booking/static/js/main.ac527570.js.map",
+    "453.43a5fe21.chunk.js.map": "/Turf-ticket-booking/static/js/453.43a5fe21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5adc53e3.css",
+    "static/js/main.ac527570.js"
+  ]
+}
