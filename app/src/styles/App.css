@@ -1,0 +1,5 @@
+/* Offset all pages below the fixed navbar */
+.home, .venues-page, .book-page,
+.submit-page, .format-page, .confirm-page {
+  padding-top: var(--navbar-h);
+}

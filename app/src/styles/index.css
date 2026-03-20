@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* ── CSS VARIABLES ─────────────────────────── */
+:root {
+  --bg:         #0a0a0f;
+  --surface:    #111118;
+  --surface-2:  #1a1a24;
+  --border:     #2a2a38;
+  --accent:     #2e88ff;
+  --accent-h:   #1a75ff;
+  --success:    #22c55e;
+  --error:      #f43f5e;
+  --text:       #e8eaf2;
+  --muted:      #888aa0;
+  --navbar-h:   72px;
+  --r-sm:       8px;
+  --r-md:       12px;
+  --r-lg:       20px;
+  --font-h:     'Sora', sans-serif;
+  --font-b:     'DM Sans', sans-serif;
+  --shadow:     0 4px 24px rgba(0,0,0,0.45);
+  --glow:       0 0 24px rgba(46,136,255,0.22);
+}
+
+/* ── RESET ─────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html  { scroll-behavior: smooth; }
+body  {
+  font-family: var(--font-b);
+  background:  var(--bg);
+  color:       var(--text);
+  -webkit-font-smoothing: antialiased;
+  min-height:  100vh;
+}
+h1,h2,h3,h4 { font-family: var(--font-h); line-height: 1.2; }
+a   { text-decoration: none; color: inherit; }
+btn { cursor: pointer; font-family: var(--font-b); }
+img { display: block; max-width: 100%; }
+
+/* ── GLOBAL BUTTONS ────────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 24px;
+  border-radius: var(--r-lg);
+  font-family: var(--font-b);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn--primary:hover {
+  background: var(--accent-h);
+  transform: translateY(-2px);
+  box-shadow: var(--glow);
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1.5px solid var(--border);
+}
+.btn--ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.btn--white {
+  background: #fff;
+  color: var(--accent);
+}
+.btn--white:hover {
+  background: #f0f4ff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* ── SECTION HELPERS ───────────────────────── */
+.section-title {
+  font-size: 2rem;
+  font-family: var(--font-h);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}

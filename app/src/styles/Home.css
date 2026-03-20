@@ -1,0 +1,192 @@
+.home { min-height: 100vh; }
+
+/* ── HERO ─────────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--navbar-h));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 10% 60px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(46,136,255,0.13) 0%, transparent 70%),
+    var(--bg);
+}
+
+.hero__bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.hero__badge {
+  display: inline-block;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+
+.hero__content { max-width: 680px; position: relative; z-index: 1; }
+
+.hero__heading {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero__highlight { color: var(--accent); }
+
+.hero__sub {
+  font-size: 1.1rem;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 36px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+/* Stats */
+.hero__stats {
+  display: flex;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+.hero__stat      { display: flex; flex-direction: column; gap: 4px; }
+.hero__stat-value {
+  font-family: var(--font-h);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.hero__stat-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── HOW IT WORKS ─────────────────────────── */
+.how-it-works {
+  padding: 80px 10%;
+  background: var(--surface);
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.step-card {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 32px 28px;
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.step-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+.step-card__icon { font-size: 2rem; margin-bottom: 12px; }
+.step-card__num {
+  position: absolute;
+  top: 20px; right: 24px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--border);
+  font-family: var(--font-h);
+  line-height: 1;
+}
+.step-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.step-card p  { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+/* ── CTA BANNER ──────────────────────────── */
+.cta-banner {
+  background: linear-gradient(135deg, var(--accent) 0%, #0055cc 100%);
+  padding: 80px 10%;
+  text-align: center;
+}
+.cta-banner h2 { font-size: 2.4rem; margin-bottom: 12px; }
+.cta-banner p  { font-size: 1.05rem; opacity: 0.88; margin-bottom: 32px; }
+
+/* ── ANIMATIONS ──────────────────────────── */
+.fade-slide {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: fadeUp 0.7s forwards;
+}
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.3s;  }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.6s;  }
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── RESPONSIVE ──────────────────────────── */
+@media (max-width: 768px) {
+  .hero          { padding: 60px 6% 50px; }
+  .hero__stats   { gap: 24px; }
+  .hero__stat-value { font-size: 1.4rem; }
+  .how-it-works  { padding: 60px 6%; }
+  .cta-banner    { padding: 60px 6%; }
+  .cta-banner h2 { font-size: 1.8rem; }
+}
+
+/* ── Footer ── */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 6%;
+  border-top: 1px solid #1e1e1e;
+  background: #0d0d0d;
+}
+
+.site-footer__copy {
+  font-size: 0.78rem;
+  color: #555;
+}
+
+.site-footer__admin {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #666;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  background: #161616;
+  transition: all 0.2s;
+}
+
+.site-footer__admin::before {
+  content: '🔐';
+  font-size: 0.7rem;
+}
+
+.site-footer__admin:hover {
+  color: #60a5fa;
+  border-color: #2563eb;
+  background: #0f1a2e;
+}
