@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Turf-ticket-booking/static/css/main.b80742ca.css",
-    "main.js": "/Turf-ticket-booking/static/js/main.a37114da.js",
+    "main.js": "/Turf-ticket-booking/static/js/main.b43a0e6c.js",
     "static/media/logo.png": "/Turf-ticket-booking/static/media/logo.f8f2e0fb9222aa050219.png",
     "static/media/turf-2.jpg": "/Turf-ticket-booking/static/media/turf-2.fa65c67f2dc1608394ae.jpg",
     "static/media/turf-9.jpg": "/Turf-ticket-booking/static/media/turf-9.2ac8b959bec2aea42559.jpg",
@@ -14,10 +14,10 @@
     "static/media/turf-8.jpg": "/Turf-ticket-booking/static/media/turf-8.b90db89f6d061ecdde08.jpg",
     "index.html": "/Turf-ticket-booking/index.html",
     "main.b80742ca.css.map": "/Turf-ticket-booking/static/css/main.b80742ca.css.map",
-    "main.a37114da.js.map": "/Turf-ticket-booking/static/js/main.a37114da.js.map"
+    "main.b43a0e6c.js.map": "/Turf-ticket-booking/static/js/main.b43a0e6c.js.map"
   },
   "entrypoints": [
     "static/css/main.b80742ca.css",
-    "static/js/main.a37114da.js"
+    "static/js/main.b43a0e6c.js"
   ]
 }
